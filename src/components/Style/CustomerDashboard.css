@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.customer-dashboard {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-container {
+  flex: 1;
+  padding: 40px 0 0 0;
+}
+
+.universal-container {
+  margin: 100px 200px 0
+}
+
+.hero{
+  position: relative;
+}
+
+.hero h1{
+  padding-top: 10px;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.hero p{
+  font-weight: 300;
+  margin-bottom: 0px;
+  width: 75%;
+}
+
+.hero h3 {
+  font-size: 25px;
+}
+
+.dashboard-hero-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background: #fff;
+}
+
+.dashboard-activities {
+  text-align: center;
+  margin: 40px 0 32px 0;
+}
+.dashboard-activities h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.dashboard-activities p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.dashboard-categories {
+  text-align: center;
+}
+.dashboard-categories h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.dashboard-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.dashboard-category {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 32px 0;
+  background: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.dashboard-category:hover {
+  border-color: #000;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.09);
+}
+
+@media (max-width: 900px) {
+  .dashboard-categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-categories-grid {
+    grid-template-columns: 1fr;
+  }
+  .dashboard-hero {
+    flex-direction: column;
+    min-height: 160px;
+  }
+  .dashboard-hero-arrow {
+    padding: 0 10px;
+  }
+  .dashboard-hero-image {
+    margin: 0 0 12px 0;
+  }
+}

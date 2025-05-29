@@ -1,0 +1,165 @@
+.logo-title{
+  margin: 30px 30px !important;
+  font-size: 30px !important;
+  font-weight: 700 !important;
+}
+
+.CustomerLogin a{
+  text-decoration: none;
+}
+
+.customerlogin-container {
+  width: 500px;
+  height: 450px;
+  border: 1px solid #e0e0e0; 
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  justify-content: center;
+  align-items: center; 
+  margin: 40px 400px;
+}
+
+.recaptcha-badge {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  overflow: hidden;
+}
+
+/* This ensures the reCAPTCHA badge adapts to dark mode */
+.grecaptcha-badge { 
+  visibility: visible !important;
+}
+
+.CustomerLogin h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #000000; 
+}
+
+.google-btn {
+  width: 50%;
+  padding: 12px;
+  background-color: #000000; 
+  color: #ffffff; 
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; 
+  transition: background-color 0.3s ease;
+}
+
+.google-btn:hover {
+  background-color: #333333; 
+}
+
+.google-icon {
+  font-size: 20px; 
+}
+
+.or-divider {
+  margin: 20px 0;
+  color: #666666; 
+  font-size: 14px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.or-divider::before,
+.or-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: #e0e0e0; 
+  margin: 0 10px;
+}
+
+.login-form input {
+  width: 80%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #e0e0e0;  
+  border-radius: 8px;
+  font-size: 14px;
+  color: #000000; 
+  background-color: #f9f9f9; 
+  transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+  border-color: #000000; 
+  outline: none;
+}
+
+.login-form button {
+  width: 40%;
+  margin-top: 25px;
+  padding: 12px;
+  background-color: #000000; 
+  color: #ffffff; 
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #333333; 
+}
+
+.admin-user {
+  margin-top: 20px;
+  display: block;
+  margin-left: 1px;
+  color: #ff0000; 
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.admin-user:hover {
+  text-decoration: underline;
+}
+
+.customer-signup-link {
+  margin: 55px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.customer-signup-link a {
+  color: #000000; 
+  text-decoration: none;
+  
+}
+
+.customer-signup-link a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 14px;
+  margin: 10px 0;
+  padding: 8px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.login-form button:disabled {
+  background-color: #666666;
+  cursor: not-allowed;
+}

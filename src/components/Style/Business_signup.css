@@ -1,0 +1,180 @@
+.BusinessSignup {
+  font-family: "Poppins", sans-serif;
+}
+
+.logo-title {
+  margin: 30px 30px !important;
+  font-size: 30px !important;
+  font-weight: 700 !important;
+  color: #000000;
+}
+
+.BusinessSignup a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.businesssignup-container {
+  width: 500px;
+  min-height: 550px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 40px auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.BusinessSignup h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #000000;
+}
+
+.google-btn {
+  width: 50%;
+  padding: 12px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0 auto 20px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.google-btn:hover {
+  background-color: #333333;
+}
+
+.google-icon {
+  font-size: 20px;
+}
+
+.or-divider {
+  margin: 20px 0;
+  color: #666666;
+  font-size: 14px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.or-divider::before,
+.or-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 0 10px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #000000;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.signup-form input.error {
+  border-color: #ff4444;
+}
+
+.signup-form input:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+.error-message {
+  color: #ff4444;
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.button-group {
+  width: 80%;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: center;
+}
+
+.signup-form button {
+  width: 50%;
+  padding: 12px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.signup-form button:hover {
+  background-color: #333333;
+}
+
+.signup-form button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.BusinessSignup .login-link {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #666666;
+}
+
+.BusinessSignup .login-link a {
+  color: #000000;
+  font-weight: 600;
+}
+
+.BusinessSignup .login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .businesssignup-container {
+    width: 90%;
+    padding: 20px;
+  }
+  
+  .google-btn,
+  .signup-form input,
+  .button-group {
+    width: 100%;
+  }
+}

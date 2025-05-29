@@ -1,0 +1,199 @@
+/* chatbot.css */
+
+/* Chatbot Container */
+.zilbiz-chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    max-height: 500px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+  
+  /* Closed state */
+  .zilbiz-chatbot-container.closed {
+    transform: translateY(calc(100% - 60px));
+  }
+  
+  /* Open state */
+  .zilbiz-chatbot-container.open {
+    transform: translateY(0);
+  }
+  
+  /* Chat Header */
+  .zilbiz-chat-header {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .zilbiz-chat-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .zilbiz-toggle-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Chat Body */
+  .zilbiz-chat-body {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Messages */
+  .zilbiz-message {
+    max-width: 80%;
+    padding: 10px 15px;
+    border-radius: 18px;
+    margin-bottom: 8px;
+    word-wrap: break-word;
+    line-height: 1.4;
+    position: relative;
+    font-size: 14px;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* User message */
+  .zilbiz-user-message {
+    align-self: flex-end;
+    background-color: #6e8efb;
+    color: white;
+    border-bottom-right-radius: 5px;
+  }
+  
+  /* Bot message */
+  .zilbiz-bot-message {
+    align-self: flex-start;
+    background-color: #f1f1f1;
+    color: #333;
+    border-bottom-left-radius: 5px;
+  }
+  
+  /* Input Area */
+  .zilbiz-input-container {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #eee;
+    background-color: white;
+  }
+  
+  .zilbiz-chat-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.3s;
+  }
+  
+  .zilbiz-chat-input:focus {
+    border-color: #a777e3;
+  }
+  
+  .zilbiz-send-button {
+    background: #6e8efb;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .zilbiz-send-button:hover {
+    background: #5a7df4;
+  }
+  
+  .zilbiz-send-button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  /* Loading indicator */
+  .zilbiz-typing-indicator {
+    display: inline-flex;
+    align-items: center;
+    height: 17px;
+  }
+  
+  .zilbiz-typing-indicator span {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #666;
+    margin-right: 3px;
+    animation: typingAnimation 1.4s infinite both;
+  }
+  
+  .zilbiz-typing-indicator span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .zilbiz-typing-indicator span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes typingAnimation {
+    0% { opacity: 0.4; transform: translateY(0); }
+    50% { opacity: 1; transform: translateY(-3px); }
+    100% { opacity: 0.4; transform: translateY(0); }
+  }
+  
+  /* Scrollbar styling */
+  .zilbiz-chat-body::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .zilbiz-chat-body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .zilbiz-chat-body::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+  }
+  
+  .zilbiz-chat-body::-webkit-scrollbar-thumb:hover {
+    background: #a777e3;
+  }

@@ -1,0 +1,93 @@
+.ContactUs {
+}
+
+.ContactUs-container {
+  width: 500px;
+  padding: 30px;
+  margin: 120px auto; /* Center horizontally */
+  align-items: center;
+  border: 1px solid #e0e0e0; 
+  border-radius: 12px;
+  background-color: #ffffff; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}  
+
+.ContactUs-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #000000; /* Black text */
+}
+
+.ContactUs-container p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.contact-form {
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form .form-group textarea {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #000000;
+  background-color: #f9f9f9;
+  height: 150px;
+  resize: none;
+  font-family: 'Poppins', sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+.recaptcha-container {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form .form-group input {
+  width: 100%;
+  padding: 1px 3px 10px;
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid #e0e0e0; 
+  border-radius: 8px;
+  font-size: 14px;
+  color: #000000; 
+  background-color: #f9f9f9; 
+  transition: border-color 0.3s ease;
+}
+
+.contact-form .form-group input:focus,
+.contact-form .form-group textarea:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+/* Center the Send Message button */
+.contact-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.ContactUs-container button {
+  width: 60%;
+  padding: 12px;
+  background-color: #000000; 
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.ContactUs-container button:hover {
+  background-color: #333333; /* Dark gray on hover */
+}

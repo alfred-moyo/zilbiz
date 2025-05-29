@@ -1,0 +1,63 @@
+.BusinessLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.BusinessLogin a {
+  text-decoration: none;
+}
+
+.businesslogin-container {
+  width: 500px;
+  height: 450px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  justify-content: center;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.BusinessLogin h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #000000;
+}
+
+.BusinessLogin p {
+  margin-bottom: 20px;
+  color: #666666;
+}
+
+.signup-link {
+  margin-top: 45px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: #dc3545;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.button-group button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
